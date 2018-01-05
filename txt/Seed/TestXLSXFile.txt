@@ -1,0 +1,328 @@
+field1	ADateField	NumberAndDecimal	ADateAndStrings	ThisHasNumbersAndStrings	Astrignfiled
+1	12/1/2017	1	12/1/2017	1	aksjdfk
+2	12/1/2017	2	12/1/2017	2	asdfjkj
+3	12/1/2017	3	12/1/2017	3	soemstring
+4	12/1/2017	4	12/1/2017	4	somestring
+5	12/1/2017	5	12/1/2017	5	somestring
+6	12/1/2017	6	12/1/2017	6	somestring
+7	12/1/2017	7	12/1/2017	7	somestring
+8	12/1/2017	8	12/1/2017	8	somestring
+9	12/1/2017	9	12/1/2017	9	somestring
+10	12/1/2017	10	12/1/2017	10	somestring
+11	12/1/2017	11	12/1/2017	11	somestring
+12	12/1/2017	12	12/1/2017	12	somestring
+13	12/1/2017	13	12/1/2017	13	somestring
+14	12/1/2017	14	12/1/2017	14	somestring
+15	12/1/2017	15	12/1/2017	15	somestring
+16	12/1/2017	16	12/1/2017	16	somestring
+17	12/1/2017	17	12/1/2017	17	somestring
+18	12/1/2017	18	12/1/2017	18	somestring
+19	12/1/2017	19	12/1/2017	19	somestring
+20	12/1/2017	20	12/1/2017	20	somestring
+21	12/1/2017	21	12/1/2017	21	somestring
+22	12/1/2017	22	12/1/2017	22	somestring
+23	12/1/2017	23	12/1/2017	23	somestring
+24	12/1/2017	24	12/1/2017	24	somestring
+25	12/1/2017	25	12/1/2017	25	somestring
+26	12/1/2017	26	12/1/2017	26	somestring
+27	12/1/2017	27	12/1/2017	27	somestring
+28	12/1/2017	28	12/1/2017	28	somestring
+29	12/1/2017	29	12/1/2017	29	somestring
+30	12/1/2017	30	12/1/2017	30	somestring
+31	12/1/2017	31	12/1/2017	31	somestring
+32	12/1/2017	32	12/1/2017	32	somestring
+33	12/1/2017	33	12/1/2017	33	somestring
+34	12/1/2017	34	12/1/2017	34	somestring
+35	12/1/2017	35	12/1/2017	35	somestring
+36	12/1/2017	36	12/1/2017	36	somestring
+37	12/1/2017	37	12/1/2017	37	somestring
+38	12/1/2017	38	12/1/2017	38	somestring
+39	12/1/2017	39	12/1/2017	39	somestring
+40	12/1/2017	40	12/1/2017	40	somestring
+41	12/1/2017	41	12/1/2017	41	somestring
+42	12/1/2017	42	12/1/2017	42	somestring
+43	12/1/2017	43	12/1/2017	43	somestring
+44	12/1/2017	44	12/1/2017	44	somestring
+45	12/1/2017	45	12/1/2017	45	somestring
+46	12/1/2017	46	12/1/2017	46	somestring
+47	12/1/2017	47	12/1/2017	47	somestring
+48	12/1/2017	48	12/1/2017	48	somestring
+49	12/1/2017	49	12/1/2017	49	somestring
+50	12/1/2017	50	12/1/2017	50	somestring
+51	12/1/2017	51	12/1/2017	51	somestring
+52	12/1/2017	52	12/1/2017	52	somestring
+53	12/1/2017	53	12/1/2017	53	somestring
+54	12/1/2017	54	12/1/2017	54	somestring
+55	12/1/2017	55	12/1/2017	55	somestring
+56	12/1/2017	56	12/1/2017	56	somestring
+57	12/1/2017	57	12/1/2017	57	somestring
+58	12/1/2017	58	12/1/2017	58	somestring
+59	12/1/2017	59	12/1/2017	59	somestring
+60	12/1/2017	60	12/1/2017	60	somestring
+61	12/1/2017	61	12/1/2017	61	somestring
+62	12/1/2017	62	12/1/2017	62	somestring
+63	12/1/2017	63	12/1/2017	63	somestring
+64	12/1/2017	64	12/1/2017	64	somestring
+65	12/1/2017	65	12/1/2017	65	somestring
+66	12/1/2017	66	12/1/2017	66	somestring
+67	12/1/2017	67	12/1/2017	67	somestring
+68	12/1/2017	68	12/1/2017	68	somestring
+69	12/1/2017	69	12/1/2017	69	somestring
+70	12/1/2017	70	12/1/2017	70	somestring
+71	12/1/2017	71	12/1/2017	71	somestring
+72	12/1/2017	72	12/1/2017	72	somestring
+73	12/1/2017	73	12/1/2017	73	somestring
+74	12/1/2017	74	12/1/2017	74	somestring
+75	12/1/2017	75	12/1/2017	75	somestring
+76	12/1/2017	76	12/1/2017	76	somestring
+77	12/1/2017	77	12/1/2017	77	somestring
+78	12/1/2017	78	12/1/2017	78	somestring
+79	12/1/2017	79	12/1/2017	79	somestring
+80	12/1/2017	80	12/1/2017	80	somestring
+81	12/1/2017	81	12/1/2017	81	somestring
+82	12/1/2017	82	12/1/2017	82	somestring
+83	12/1/2017	83	12/1/2017	83	somestring
+84	12/1/2017	84	12/1/2017	84	somestring
+85	12/1/2017	85	12/1/2017	85	somestring
+86	12/1/2017	86	12/1/2017	86	somestring
+87	12/1/2017	87	12/1/2017	87	somestring
+88	12/1/2017	88	12/1/2017	88	somestring
+89	12/1/2017	89	12/1/2017	89	somestring
+90	12/1/2017	90	12/1/2017	90	somestring
+91	12/1/2017	91	12/1/2017	91	somestring
+92	12/1/2017	92	12/1/2017	92	somestring
+93	12/1/2017	93	12/1/2017	93	somestring
+94	12/1/2017	94	12/1/2017	94	somestring
+95	12/1/2017	95	12/1/2017	95	somestring
+96	12/1/2017	96	12/1/2017	96	somestring
+97	12/1/2017	97	12/1/2017	97	somestring
+98	12/1/2017	98	12/1/2017	98	somestring
+99	12/1/2017	99	12/1/2017	99	somestring
+100	12/1/2017	100	12/1/2017	100	somestring
+101	12/1/2017	101	12/1/2017	101	somestring
+102	12/1/2017	102	12/1/2017	102	somestring
+103	12/1/2017	103	12/1/2017	103	somestring
+104	12/1/2017	104	12/1/2017	104	somestring
+105	12/1/2017	105	12/1/2017	105	somestring
+106	12/1/2017	106	12/1/2017	106	somestring
+107	12/1/2017	107	12/1/2017	107	somestring
+108	12/1/2017	108	12/1/2017	108	somestring
+109	12/1/2017	109	12/1/2017	109	somestring
+110	12/1/2017	110	12/1/2017	110	somestring
+111	12/1/2017	111	12/1/2017	111	somestring
+112	12/1/2017	112	12/1/2017	112	somestring
+113	12/1/2017	113	12/1/2017	113	somestring
+114	12/1/2017	114	12/1/2017	114	somestring
+115	12/1/2017	115	12/1/2017	115	somestring
+116	12/1/2017	116	12/1/2017	116	somestring
+117	12/1/2017	117	12/1/2017	117	somestring
+118	12/1/2017	118	12/1/2017	118	somestring
+119	12/1/2017	119	12/1/2017	119	somestring
+120	12/1/2017	120	12/1/2017	120	somestring
+121	12/1/2017	121	12/1/2017	121	somestring
+122	12/1/2017	122	12/1/2017	122	somestring
+123	12/1/2017	123	12/1/2017	123	somestring
+124	12/1/2017	124	12/1/2017	124	somestring
+125	12/1/2017	125	12/1/2017	125	somestring
+126	12/1/2017	126	12/1/2017	126	somestring
+127	12/1/2017	127	12/1/2017	127	somestring
+128	12/1/2017	128	12/1/2017	128	somestring
+129	12/1/2017	129	12/1/2017	129	somestring
+130	12/1/2017	130	12/1/2017	130	somestring
+131	12/1/2017	131	12/1/2017	131	somestring
+132	12/1/2017	132	12/1/2017	132	somestring
+133	12/1/2017	133	12/1/2017	133	somestring
+134	12/1/2017	134	12/1/2017	134	somestring
+135	12/1/2017	135	12/1/2017	135	somestring
+136	12/1/2017	136	12/1/2017	136	somestring
+137	12/1/2017	137	12/1/2017	137	somestring
+138	12/1/2017	138	12/1/2017	138	somestring
+139	12/1/2017	139	12/1/2017	139	somestring
+140	12/1/2017	140	12/1/2017	140	somestring
+141	12/1/2017	141	12/1/2017	141	somestring
+142	12/1/2017	142	12/1/2017	142	somestring
+143	12/1/2017	143	12/1/2017	143	somestring
+144	12/1/2017	144	12/1/2017	144	somestring
+145	12/1/2017	145	12/1/2017	145	somestring
+146	12/1/2017	146	12/1/2017	146	somestring
+147	12/1/2017	147	12/1/2017	147	somestring
+148	12/1/2017	148	12/1/2017	148	somestring
+149	12/1/2017	149	12/1/2017	149	somestring
+150	12/1/2017	150	12/1/2017	150	somestring
+151	12/1/2017	151	12/1/2017	151	somestring
+152	12/1/2017	152	12/1/2017	152	somestring
+153	12/1/2017	153	12/1/2017	153	somestring
+154	12/1/2017	154	12/1/2017	154	somestring
+155	12/1/2017	155	12/1/2017	155	somestring
+156	12/1/2017	156	12/1/2017	156	somestring
+157	12/1/2017	157	12/1/2017	157	somestring
+158	12/1/2017	158	12/1/2017	158	somestring
+159	12/1/2017	159	12/1/2017	159	somestring
+160	12/1/2017	160	12/1/2017	160	somestring
+161	12/1/2017	161	12/1/2017	161	somestring
+162	12/1/2017	162	12/1/2017	162	somestring
+163	12/1/2017	163	12/1/2017	163	somestring
+164	12/1/2017	164	12/1/2017	164	somestring
+165	12/1/2017	165	12/1/2017	165	somestring
+166	12/1/2017	166	12/1/2017	166	somestring
+167	12/1/2017	167	12/1/2017	167	somestring
+168	12/1/2017	168	12/1/2017	168	somestring
+169	12/1/2017	169	12/1/2017	169	somestring
+170	12/1/2017	170	12/1/2017	170	somestring
+171	12/1/2017	171	12/1/2017	171	somestring
+172	12/1/2017	172	12/1/2017	172	somestring
+173	12/1/2017	173	12/1/2017	173	somestring
+174	12/1/2017	174	12/1/2017	174	somestring
+175	12/1/2017	175	12/1/2017	175	somestring
+176	12/1/2017	176	12/1/2017	176	somestring
+177	12/1/2017	177	12/1/2017	177	somestring
+178	12/1/2017	178	12/1/2017	178	somestring
+179	12/1/2017	179	12/1/2017	179	somestring
+180	12/1/2017	180	12/1/2017	180	somestring
+181	12/1/2017	181	12/1/2017	181	somestring
+182	12/1/2017	182	12/1/2017	182	somestring
+183	12/1/2017	183	12/1/2017	183	somestring
+184	12/1/2017	184	12/1/2017	184	somestring
+185	12/1/2017	185	12/1/2017	185	somestring
+186	12/1/2017	186	12/1/2017	186	somestring
+187	12/1/2017	187	12/1/2017	187	somestring
+188	12/1/2017	188	12/1/2017	188	somestring
+189	12/1/2017	189	12/1/2017	189	somestring
+190	12/1/2017	190	12/1/2017	190	somestring
+191	12/1/2017	191	12/1/2017	191	somestring
+192	12/1/2017	192	12/1/2017	192	somestring
+193	12/1/2017	193	12/1/2017	193	somestring
+194	12/1/2017	194	12/1/2017	194	somestring
+195	12/1/2017	195	12/1/2017	195	somestring
+196	12/1/2017	196	12/1/2017	196	somestring
+197	12/1/2017	197	12/1/2017	197	somestring
+198	12/1/2017	198	12/1/2017	198	somestring
+199	12/1/2017	199	12/1/2017	199	somestring
+200	12/1/2017	200	12/1/2017	200	somestring
+201	12/1/2017	201	12/1/2017	201	somestring
+202	12/1/2017	202	12/1/2017	202	somestring
+203	12/1/2017	203	12/1/2017	203	somestring
+204	12/1/2017	204	12/1/2017	204	somestring
+205	12/1/2017	205	12/1/2017	205	somestring
+206	12/1/2017	206	12/1/2017	206	somestring
+207	12/1/2017	207	12/1/2017	207	somestring
+208	12/1/2017	208	12/1/2017	208	somestring
+209	12/1/2017	209	12/1/2017	209	somestring
+210	12/1/2017	210	12/1/2017	210	somestring
+211	12/1/2017	211	12/1/2017	211	somestring
+212	12/1/2017	212	12/1/2017	212	somestring
+213	12/1/2017	213	12/1/2017	213	somestring
+214	12/1/2017	214	12/1/2017	214	somestring
+215	12/1/2017	215	12/1/2017	215	somestring
+216	12/1/2017	216	12/1/2017	216	somestring
+217	12/1/2017	217	12/1/2017	217	somestring
+218	12/1/2017	218	12/1/2017	218	somestring
+219	12/1/2017	219	12/1/2017	219	somestring
+220	12/1/2017	220	12/1/2017	220	somestring
+221	12/1/2017	221	12/1/2017	221	somestring
+222	12/1/2017	222	12/1/2017	222	somestring
+223	12/1/2017	223	12/1/2017	223	somestring
+224	12/1/2017	224	12/1/2017	224	somestring
+225	12/1/2017	225	12/1/2017	225	somestring
+226	12/1/2017	226	12/1/2017	226	somestring
+227	12/1/2017	227	12/1/2017	227	somestring
+228	12/1/2017	228	12/1/2017	228	somestring
+229	12/1/2017	229	12/1/2017	229	somestring
+230	12/1/2017	230	12/1/2017	230	somestring
+231	12/1/2017	231	12/1/2017	231	somestring
+232	12/1/2017	232	12/1/2017	232	somestring
+233	12/1/2017	233	12/1/2017	233	somestring
+234	12/1/2017	234	12/1/2017	234	somestring
+235	12/1/2017	1.5	some string values	some string values	somestring
+236	12/1/2017	1.5	some string values	some string values	somestring
+237	12/1/2017	1.5	some string values	some string values	somestring
+238	12/1/2017	1.5	some string values	some string values	somestring
+239	12/1/2017	1.5	some string values	some string values	somestring
+240	12/1/2017	1.5	some string values	some string values	somestring
+241	12/1/2017	1.5	some string values	some string values	somestring
+242	12/1/2017	1.5	some string values	some string values	somestring
+243	12/1/2017	1.5	some string values	some string values	somestring
+244	12/1/2017	1.5	some string values	some string values	somestring
+245	12/1/2017	1.5	some string values	some string values	somestring
+246	12/1/2017	1.5	some string values	some string values	somestring
+247	12/1/2017	1.5	some string values	some string values	somestring
+248	12/1/2017	1.5	some string values	some string values	somestring
+249	12/1/2017	1.5	some string values	some string values	somestring
+250	12/1/2017	1.5	some string values	some string values	somestring
+251	12/1/2017	1.5	some string values	some string values	somestring
+252	12/1/2017	1.5	some string values	some string values	somestring
+253	12/1/2017	1.5	some string values	some string values	somestring
+254	12/1/2017	1.5	some string values	some string values	somestring
+255	12/1/2017	1.5	some string values	some string values	somestring
+256	12/1/2017	1.5	some string values	some string values	somestring
+257	12/1/2017	1.5	some string values	some string values	somestring
+258	12/1/2017	1.5	some string values	some string values	somestring
+259	12/1/2017	1.5	some string values	some string values	somestring
+260	12/1/2017	1.5	some string values	some string values	somestring
+261	12/1/2017	1.5	some string values	some string values	somestring
+262	12/1/2017	1.5	some string values	some string values	somestring
+263	12/1/2017	1.5	some string values	some string values	somestring
+264	12/1/2017	1.5	some string values	some string values	somestring
+265	12/1/2017	1.5	some string values	some string values	somestring
+266	12/1/2017	1.5	some string values	some string values	somestring
+267	12/1/2017	1.5	some string values	some string values	somestring
+268	12/1/2017	1.5	some string values	some string values	somestring
+269	12/1/2017	1.5	some string values	some string values	somestring
+270	12/1/2017	1.5	some string values	some string values	somestring
+271	12/1/2017	1.5	some string values	some string values	somestring
+272	12/1/2017	1.5	some string values	some string values	somestring
+273	12/1/2017	1.5	some string values	some string values	somestring
+274	12/1/2017	1.5	some string values	some string values	somestring
+275	12/1/2017	1.5	some string values	some string values	somestring
+276	12/1/2017	1.5	some string values	some string values	somestring
+277	12/1/2017	1.5	some string values	some string values	somestring
+278	12/1/2017	1.5	some string values	some string values	somestring
+279	12/1/2017	1.5	some string values	some string values	somestring
+280	12/1/2017	1.5	some string values	some string values	somestring
+281	12/1/2017	1.5	some string values	some string values	somestring
+282	12/1/2017	1.5	some string values	some string values	somestring
+283	12/1/2017	1.5	some string values	some string values	somestring
+284	12/1/2017	1.5	some string values	some string values	somestring
+285	12/1/2017	1.5	some string values	some string values	somestring
+286	12/1/2017	1.5	some string values	some string values	somestring
+287	12/1/2017	1.5	some string values	some string values	somestring
+288	12/1/2017	1.5	some string values	some string values	somestring
+289	12/1/2017	1.5	some string values	some string values	somestring
+290	12/1/2017	1.5	some string values	some string values	somestring
+291	12/1/2017	1.5	some string values	some string values	somestring
+292	12/1/2017	1.5	some string values	some string values	somestring
+293	12/1/2017	1.5	some string values	some string values	somestring
+294	12/1/2017	1.5	some string values	some string values	somestring
+295	12/1/2017	1.5	some string values	some string values	somestring
+296	12/1/2017	1.5	some string values	some string values	somestring
+297	12/1/2017	1.5	some string values	some string values	somestring
+298	12/1/2017	1.5	some string values	some string values	somestring
+299	12/1/2017	1.5	some string values	some string values	somestring
+300	12/1/2017	1.5	some string values	some string values	somestring
+301	12/1/2017	1.5	some string values	some string values	somestring
+302	12/1/2017	1.5	some string values	some string values	somestring
+303	12/1/2017	1.5	some string values	some string values	somestring
+304	12/1/2017	1.5	some string values	some string values	somestring
+305	12/1/2017	1.5	some string values	some string values	somestring
+306	12/1/2017	1.5	some string values	some string values	somestring
+307	12/1/2017	1.5	some string values	some string values	somestring
+308	12/1/2017	1.5	some string values	some string values	somestring
+309	12/1/2017	1.5	some string values	some string values	somestring
+310	12/1/2017	1.5	some string values	some string values	somestring
+311	12/1/2017	1.5	some string values	some string values	somestring
+312	12/1/2017	1.5	some string values	some string values	somestring
+313	12/1/2017	1.5	some string values	some string values	somestring
+314	12/1/2017	1.5	some string values	some string values	somestring
+315	12/1/2017	1.5	some string values	some string values	somestring
+316	12/1/2017	1.5	some string values	some string values	somestring
+317	12/1/2017	1.5	some string values	some string values	somestring
+318	12/1/2017	1.5	some string values	some string values	somestring
+319	12/1/2017	1.5	some string values	some string values	somestring
+320	12/1/2017	1.5	some string values	some string values	somestring
+321	12/1/2017	1.5	some string values	some string values	somestring
+322	12/1/2017	1.5	some string values	some string values	somestring
+323	12/1/2017	1.5	some string values	some string values	somestring
+324	12/1/2017	1.5	some string values	some string values	somestring
+325	12/1/2017	1.5	some string values	some string values	somestring
+326	12/1/2017	1.5	some string values	some string values	somestring
+327	12/1/2017	1.5	some string values	some string values	somestring
