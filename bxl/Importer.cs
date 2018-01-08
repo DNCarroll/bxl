@@ -9,8 +9,10 @@ namespace bxl {
     public class Import {
 
         public Model.Template Template { get; set; }
-        public Import(Model.Template template) {
+        public bool LogSteps { get; set; }
+        public Import(Model.Template template, bool logSteps = false) {
             this.Template = template;
+            this.LogSteps = logSteps;
         }
 
         /// <summary>
@@ -79,16 +81,21 @@ namespace bxl {
         private bool Execute(Func<ImportResults, bool> action, ImportResults importResults, string methodName) {
             bool result = false;
             try {
-                Stopwatch stopWatch = new Stopwatch();
-                stopWatch.Start();
+                Stopwatch stopWatch = null;
+                if (this.LogSteps) {
+                    stopWatch = new Stopwatch();
+                    stopWatch.Start();
+                }
                 result = action(importResults);
-                Data.Log.Update.Execute(new Model.Log {
-                    Notes = $"{methodName} run took {stopWatch.ElapsedMilliseconds}ms",
-                    Occurred = DateTime.Now,
-                    RanBy = "Nathan_Carroll",
-                    TemplateId = importResults.Template.TemplateId
-                });
-                stopWatch.Stop();
+                if (this.LogSteps) {
+                    Data.Log.Update.Execute(new Model.Log {
+                        Notes = $"{methodName} run took {stopWatch.ElapsedMilliseconds}ms",
+                        Occurred = DateTime.Now,
+                        RanBy = "Nathan_Carroll",
+                        TemplateId = importResults.Template.TemplateId
+                    });
+                    stopWatch.Stop();
+                }
             }
             catch (Exception ex) {
                 //record ex here
