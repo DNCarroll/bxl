@@ -142,14 +142,12 @@ namespace bxl {
             }
             return true;
         }
-                
+
         private bool CreateWorkingTable(ImportResults importResults) {
-            if (!string.IsNullOrEmpty(importResults.Template.LoadTransformProcedure)) {
-                using (var conn = new SqlConnection(importResults.Template.ConnectionString)) {
-                    using (var cmd = new SqlCommand(importResults.Template.CreateTableComamndStatement(), conn)) {
-                        conn.Open();
-                        cmd.ExecuteNonQuery();
-                    }
+            using (var conn = new SqlConnection(importResults.Template.ConnectionString)) {
+                using (var cmd = new SqlCommand(importResults.Template.CreateTableComamndStatement(), conn)) {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
                 }
             }
             return true;
