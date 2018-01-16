@@ -15,7 +15,7 @@ namespace bxl.Data {
                 while (sr.Peek() > -1) {
                     var line = sr.ReadLine();
                     if (line != "") {
-                        var row = getSplit(template.Delimiter, line);
+                        var row = GetSplit(template.Delimiter, line);
                         if (fields.Count == 0) {
                             if (template.HasHeaders) {
                                 CreateFieldsFromHeader(fields, row);
@@ -35,7 +35,7 @@ namespace bxl.Data {
             return fields;
         }
 
-        string[] getSplit(string delimiter, string line) {
+        string[] GetSplit(string delimiter, string line) {
             if (delimiter != ",") {
                 return line.Split(new string[] { delimiter }, StringSplitOptions.None);
             }
@@ -48,11 +48,11 @@ namespace bxl.Data {
                 //    split.Add(m.Value);
                 //}
                 //return split.ToArray();
-                return splitQuoted(line, ',');
+                return SplitQuoted(line, ',');
             }
         }
 
-        private string[] splitQuoted(string line, char delimeter) {
+        private string[] SplitQuoted(string line, char delimeter) {
             string[] array;
             List<string> list = new List<string>();
             do {
@@ -127,7 +127,7 @@ namespace bxl.Data {
                 while (sr.Peek() > -1) {
                     var line = sr.ReadLine();
                     if (line != "") {
-                        var row = getSplit(import.Template.Delimiter, line);
+                        var row = GetSplit(import.Template.Delimiter, line);
                         if (fields.Count == 0) {
                             if (import.Template.HasHeaders) {
                                 CreateFieldsFromHeader(fields, row);

@@ -46,6 +46,8 @@ namespace bxl.Model {
                     case "StartErrorId": return StartErrorId;
                     case "ImportDirectoryHandling": return ImportDirectoryHandling;
                     case "RowBehaviorOnFailure": return RowBehaviorOnFailure;
+                    case "WorksheetName": return WorksheetName;
+                    case "StartRow": return StartRow;
                     default:
                         return null;
                 }
@@ -74,6 +76,8 @@ namespace bxl.Model {
                     case "Body": this.Body = value is string ? (string)value : value != null ? Convert.ToString(value) : System.String.Empty; break;
                     case "ImportDirectoryHandling": this.ImportDirectoryHandling = value ==null ?default(ImportDirectoryHandling) : (ImportDirectoryHandling)System.Enum.Parse(typeof(ImportDirectoryHandling), value.ToString()); break;
                     case "RowBehaviorOnFailure": this.RowBehaviorOnFailure = value == null ? default(RowBehaviorOnFailure) : (RowBehaviorOnFailure)System.Enum.Parse(typeof(RowBehaviorOnFailure), value.ToString()); break;
+                    case "WorksheetName": this.WorksheetName = value is string ? (string)value : value != null ? Convert.ToString(value) : System.String.Empty; break;
+                    case "StartRow": this.StartRow = value is int ? (int)value : value != null ? Convert.ToInt32(value) : 0; break;
                     default:
                         break;
                 }
@@ -102,6 +106,9 @@ namespace bxl.Model {
         public string ImportDirectory { get; set; }
         public string BackupDirectory { get; set; }
         public string ReferenceFile { get; set; }
+        public string WorksheetName { get; set; } = null;
+        public int StartRow { get; set; } = 1;
+
         public static List<Template> GetByProcessGroup(string processGroup) =>
             Data.Template.List.ToList(new Template { ProjectGroup = processGroup });
 

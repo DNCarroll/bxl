@@ -115,11 +115,113 @@ namespace bxl.Data {
         }
 
         internal override void ImportSubhandler(ImportResults import) {
+            if (!string.IsNullOrEmpty(import.Template.WorksheetName)) {
+                slowImport(import);
+            }
+            else {
+                fastImport(import);
+            }
+        }
+
+        internal void slowImport(ImportResults import) {
+            
+            using (SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Open(import.ImportFileName, false)) {
+
+                WorkbookPart workBookPart = spreadsheetDocument.WorkbookPart;
+                var cellFormats = workBookPart.WorkbookStylesPart.Stylesheet.CellFormats;                
+                var sheet = GetSheet(workBookPart, import);
+
+                if (sheet != null) {
+
+                    var needHeader = true; //its about establishing the fields first then if actually is a header it moves on
+                    List<Model.Field> fields = new List<Model.Field>();
+                    var rows = GetRows(workBookPart, sheet, import);
+                    int rowIndex = 1;
+
+                    foreach (Row row in rows) {
+
+                        var cells = row.Elements<Cell>();
+                        ReadCells(import, cells, cellFormats, workBookPart, needHeader, fields, rowIndex);
+                        if (needHeader) {
+                            needHeader = false;
+                            if (!import.Template.HasGoodColumnMatch(fields)) {
+                                import.Message = $"File formatting issue: file,{import.ImportFileName}, columns do not match the reference file,{import.Template.ReferenceFile}";
+                                this.ShouldAttemptInsert = false;
+                                return;
+                            }
+                            if (import.Template.HasHeaders) {
+                                continue;
+                            }
+                        }
+                        this.Insert(fields, import, rowIndex);
+                        rowIndex++;
+
+                    }
+                }
+            }
+        }
+
+        internal Sheet GetSheet(WorkbookPart workbookPart, ImportResults import) =>
+            !string.IsNullOrEmpty(import.Template.WorksheetName) ?
+                workbookPart.Workbook.Descendants<Sheet>().FirstOrDefault(s => s.Name == import.Template.WorksheetName) :
+                workbookPart.Workbook.Descendants<Sheet>().FirstOrDefault();
+
+        internal Row[] GetRows(WorkbookPart workBookPart, Sheet sheet, ImportResults import) {
+            WorksheetPart wsPart = workBookPart.GetPartById(sheet.Id) as WorksheetPart;
+            Row[] rows = wsPart.Worksheet.Descendants<Row>().ToArray();
+            if (import.Template.StartRow > 1) {
+                //needs testing
+                return rows.Skip(import.Template.StartRow - 1).ToArray();
+            }
+            return rows;
+        }
+
+        private void ReadCells(ImportResults import, IEnumerable<Cell> cells, CellFormats cellFormats, WorkbookPart workbookPart,
+            bool needHeader, List<Model.Field> fields, int rowIndex) {
+
+            foreach (Cell c in cells) {
+                var cellValue = GetCellValue(workbookPart, cellFormats, c);
+                if (needHeader) {
+                    SetHeader(import.Template.HasHeaders, fields, c, cellValue);
+                    if (import.Template.HasHeaders) {
+                        continue;
+                    }
+                }
+                string excelColumnReference = Regex.Replace(c.CellReference, "\\d", "");
+                var field = fields.FirstOrDefault(f => f.ExcelColumnReference == excelColumnReference);
+                SetFieldType(fields, cellValue, c);
+                if (field != null) {
+                    field.SetValue(cellValue);
+                }
+            }
+        }
+
+        internal WorksheetPart GetWorksheetPart(WorkbookPart workbookPart,
+            ImportResults import) {
+            if (!string.IsNullOrEmpty(import.Template.WorksheetName)) {
+                int sheetIndex = 0;
+                foreach (WorksheetPart worksheetpart in workbookPart.WorksheetParts) {
+                    Worksheet worksheet = worksheetpart.Worksheet;
+                    string sheetName = workbookPart.Workbook.Descendants<Sheet>().ElementAt(sheetIndex).Name;
+                    if (sheetName == import.Template.WorksheetName) {
+                        return worksheetpart;
+                    }
+                    sheetIndex++;
+                }
+            }
+            var worksheetPart = workbookPart.WorksheetParts.FirstOrDefault();
+            return worksheetPart;
+        }
+
+
+        internal void fastImport(ImportResults import) {
 
             using (SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Open(import.ImportFileName, false)) {
+
                 WorkbookPart workbookPart = spreadsheetDocument.WorkbookPart;
                 var cellFormats = workbookPart.WorkbookStylesPart.Stylesheet.CellFormats;
-                var worksheetPart = workbookPart.WorksheetParts.FirstOrDefault();
+                var worksheetPart = GetWorksheetPart(workbookPart, import);
+
                 OpenXmlReader reader = OpenXmlReader.Create(worksheetPart);
                 var needHeader = true;
                 List<Model.Field> fields = new List<Model.Field>();
