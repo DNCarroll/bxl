@@ -10,8 +10,13 @@ namespace bxl {
 
         public Model.Template Template { get; set; }
         public bool LogSteps { get; set; }
-        public Import(Model.Template template, bool logSteps = false) {
+        public Import(Model.Template template, 
+            Func<string> getImporter = null,
+            bool logSteps = false) {
             this.Template = template;
+            if (getImporter != null) {
+                this.Template.Importer = getImporter;
+            }
             this.LogSteps = logSteps;
         }
 

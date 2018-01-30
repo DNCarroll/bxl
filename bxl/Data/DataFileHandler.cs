@@ -64,6 +64,7 @@ namespace bxl.Data {
                 cmd.Connection = conn;
                 cmd.Parameters["@ImportFileName"].Value = import.ImportFileName;
                 cmd.Parameters["@ImportDate"].Value = import.ImportDate;
+                cmd.Parameters["@Importer"].Value = import.Template.Importer();
                 foreach (var field in template.Fields) {
                     var found = fields.FirstOrDefault(f => f.FieldName == field.FieldName);
                     if (found != null) {

@@ -21,6 +21,9 @@ namespace bxl.Model {
     }
 
     public class Template : IBattleAxe {
+
+        public Func<string> Importer { get; set; } = () => string.Empty;
+
         public object this[string property] {
             get {
                 switch (property) {
@@ -150,6 +153,7 @@ namespace bxl.Model {
                 this._insertCommand = new SqlCommand(InsertStatement());
                 this._insertCommand.Parameters.Add("@ImportFileName", SqlDbType.NVarChar, 500);
                 this._insertCommand.Parameters.Add("@ImportDate", SqlDbType.DateTime);
+                this._insertCommand.Parameters.Add("@Importer", SqlDbType.NVarChar, 100);
                 foreach (var field in this.Fields) {
                     var parameter = new SqlParameter {
                         ParameterName = $"@{field.DataFieldName}",
@@ -179,12 +183,14 @@ namespace bxl.Model {
                                         (
                                             ImportFileName,
                                             ImportDate,
+                                            Importer,
                                             {string.Join(",", this.Fields.Select(f => $"{f.DataFieldName}").ToArray())}
                                         )
                                         VALUES
                                         (
                                             @ImportFileName,
                                             @ImportDate,
+                                            @Importer,
                                             {string.Join(",", this.Fields.Select(f => $"@{f.DataFieldName}").ToArray())}
                                         );";
 
@@ -202,7 +208,8 @@ namespace bxl.Model {
                     (
                         {string.Join(", ", fields)},
                         ImportFileName nvarchar(500),
-			            ImportDate datetime
+			            ImportDate datetime,
+                        Importer nvarchar(100)
 		            );
             END";
             return createTable;
@@ -294,5 +301,7 @@ namespace bxl.Model {
                 return Fields.Count != fields.Count;
             }
         }
+
+
     }
 }
